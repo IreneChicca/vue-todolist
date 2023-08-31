@@ -23,7 +23,13 @@
     <div id="app">
       <div>
         <ul>
-          <li v-for="(todo,index) in todoList">{{ todoList[index].text }}</li>
+          <li v-for="(todo,index) in todoList">
+            <span
+              :class="(todo.done==true) ? 'text-decoration-line-through' : '' "
+            >
+              {{ todoList[index].text }}
+            </span>
+          </li>
         </ul>
       </div>
     </div>

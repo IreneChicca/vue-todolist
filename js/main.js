@@ -6,7 +6,7 @@ createApp({
       todoList: [
         { text: "Fare la spesa", done: false },
         { text: "Pulire salone", done: false },
-        { text: "Ritirare pacco", done: false },
+        { text: "Ritirare pacco", done: true },
         { text: "Andare in farmacia", done: false },
       ],
     };
