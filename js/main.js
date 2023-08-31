@@ -11,4 +11,10 @@ createApp({
       ],
     };
   },
+
+  methods: {
+    deleteTask() {
+      console.log("ok");
+    },
+  },
 }).mount("#app");
