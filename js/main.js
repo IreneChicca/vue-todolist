@@ -9,6 +9,8 @@ createApp({
         { text: "Ritirare pacco", done: true },
         { text: "Andare in farmacia", done: false },
       ],
+
+      newTask: "",
     };
   },
 
