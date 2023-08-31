@@ -21,9 +21,9 @@
   </head>
   <body>
     <div id="app">
-      <div>
-        <ul>
-          <li v-for="(todo,index) in todoList">
+      <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item" v-for="(todo,index) in todoList">
             <span
               :class="(todo.done==true) ? 'text-decoration-line-through' : '' "
             >
