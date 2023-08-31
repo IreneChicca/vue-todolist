@@ -19,5 +19,10 @@ createApp({
     deleteTask(index) {
       this.todoList.splice(index, 1);
     },
+
+    // creo metodo che deve prendere il testo all'interno dell'input e pusharlo nell'array esistente
+    addTask() {
+      console.log("ok");
+    },
   },
 }).mount("#app");
