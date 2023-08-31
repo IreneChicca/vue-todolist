@@ -31,6 +31,7 @@
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
               v-model="newTask"
+              @keyup.enter="addTask()"
             />
             <button
               class="btn btn-outline-secondary"
@@ -50,6 +51,7 @@
           >
             <span
               :class="(todo.done==true) ? 'text-decoration-line-through' : '' "
+              @click="toggleClass(index)"
             >
               {{ todoList[index].text }}
             </span>
