@@ -22,9 +22,17 @@ createApp({
 
     // creo metodo che deve prendere il testo all'interno dell'input e pusharlo nell'array esistente
     addTask() {
-      const taskToAdd = { text: this.newTask, done: false };
-
-      this.todoList.push(taskToAdd);
+      if (this.newTask.length > 2) {
+        //inserisco in una variabile la creazione del nuovo oggetto
+        const taskToAdd = { text: this.newTask, done: false };
+        // inserisco all'inizio dell'array l'oggetto creato
+        this.todoList.unshift(taskToAdd);
+        // svuoto il placeholder una volta cliccato il tasto add
+        this.newTask = "";
+      } else {
+        alert("Inserisci un task valido");
+        this.newTask = "";
+      }
     },
   },
 }).mount("#app");
