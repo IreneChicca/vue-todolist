@@ -23,12 +23,17 @@
     <div id="app">
       <div class="container">
         <ul class="list-group">
-          <li class="list-group-item" v-for="(todo,index) in todoList">
+          <li
+            class="list-group-item d-flex justify-content-between"
+            v-for="(todo,index) in todoList"
+          >
             <span
               :class="(todo.done==true) ? 'text-decoration-line-through' : '' "
             >
               {{ todoList[index].text }}
             </span>
+
+            <button>X</button>
           </li>
         </ul>
       </div>
