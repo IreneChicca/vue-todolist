@@ -22,7 +22,9 @@ createApp({
 
     // creo metodo che deve prendere il testo all'interno dell'input e pusharlo nell'array esistente
     addTask() {
-      console.log("ok");
+      const taskToAdd = { text: this.newTask, done: false };
+
+      this.todoList.push(taskToAdd);
     },
   },
 }).mount("#app");
