@@ -23,7 +23,7 @@
     <div id="app">
       <div>
         <ul>
-          <li></li>
+          <li v-for="(todo,index) in todoList">{{ todoList[index].text }}</li>
         </ul>
       </div>
     </div>
