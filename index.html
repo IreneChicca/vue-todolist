@@ -33,7 +33,9 @@
               {{ todoList[index].text }}
             </span>
 
-            <button class="rounded bg-danger" @click="deleteTask()">X</button>
+            <button class="rounded bg-danger" @click="deleteTask(index)">
+              X
+            </button>
           </li>
         </ul>
       </div>

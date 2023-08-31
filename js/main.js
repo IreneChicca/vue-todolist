@@ -13,8 +13,9 @@ createApp({
   },
 
   methods: {
-    deleteTask() {
-      console.log("ok");
+    // creo metodo che mi permetta di eliminare il task in base al suo indice che individuo dal for
+    deleteTask(index) {
+      this.todoList.splice(index, 1);
     },
   },
 }).mount("#app");
